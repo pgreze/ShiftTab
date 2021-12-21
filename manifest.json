@@ -34,8 +34,6 @@
       "description": "Move tab one window down"
     }
   },
-  "permissions": [
-      "storage"
-  ],
+  "permissions": [],
   "manifest_version": 2
 }
