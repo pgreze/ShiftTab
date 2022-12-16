@@ -122,8 +122,13 @@ chrome.commands.onCommand.addListener(function(command) {
 
       let windows = yield chrome.windows.getAll.toPromise(null);
       let currentWin = windows.find(w => current.windowId == w.id);
-      windows = windows.filter(x => x.state == "normal" && inOrder(x, currentWin)>0)
-                       .sort(inOrder);
+      windows = windows
+        .filter(
+          (x) =>
+            (x.state == "normal" || x.state == "maximized") &&
+            inOrder(x, currentWin) > 0
+        )
+        .sort(inOrder);
       // console.table(windows);
 
       let nextWin = windows[0];
