@@ -5,7 +5,7 @@ between windows. Very useful when using a tiled window manager.
 
 ## Installation
 
-Download from the [Chrome Webstore]()
+Download from the [Chrome Webstore](https://chrome.google.com/webstore/detail/shift-tab/bjiiinamdgebpdcfbobnjnapnnndejnh)
 
 ## Screenshots
 
